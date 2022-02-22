@@ -67,14 +67,14 @@ def phi(x: float, order:int):
         if (x > 0 and x <= 1): return x;
         if (x > 1 and x <= 2): return 2 - x;
     elif (order == 2):
-        if (x > 0 and x <= 1): return (0.5 * pow(x, 2)) / 0.75;
-        if (x > 1 and x <= 2): return (0.75 - pow((x - 1.5), 2)) / 0.75;
-        if (x > 2 and x <= 3): return (0.5 * pow(x - 3, 2)) / 0.75;
+        if (x > 0 and x <= 1): return (0.5 * pow(x, 2))
+        if (x > 1 and x <= 2): return (0.75 - pow((x - 1.5), 2))
+        if (x > 2 and x <= 3): return (0.5 * pow(x - 3, 2))
     elif (order == 3):
-        if (x > 0 and x <= 1): return (pow(x, 3) / 6.0) * (3 / 2.0);
-        if (x > 1 and x <= 2): return (2 / 3.0 - x * pow(x - 2, 2) / 2) * (3 / 2.0);
-        if (x > 2 and x <= 3): return (-22 / 3.0 + 0.5 * x * (20 + x * (x - 8))) * (3 / 2.0);
-        if (x > 3 and x <= 4): return (-pow(x - 4, 3) / 6.0) * (3 / 2.0);
+        if (x > 0 and x <= 1): return (pow(x, 3) / 6.0)
+        if (x > 1 and x <= 2): return (2 / 3.0 - x * pow(x - 2, 2) / 2)
+        if (x > 2 and x <= 3): return (-22 / 3.0 + 0.5 * x * (20 + x * (x - 8)))
+        if (x > 3 and x <= 4): return (-pow(x - 4, 3) / 6.0)
     elif (order == 4):
         if (x > 0 and x <= 1): return pow(x, 4) / 24.0;
         if (x > 1 and x <= 2): return (-5 + 2 * x * (10 + x * (-15 - 2 * x * (x - 5)))) / 24.0;
